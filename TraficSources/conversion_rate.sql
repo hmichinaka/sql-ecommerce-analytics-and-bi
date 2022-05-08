@@ -4,7 +4,7 @@ Then, calculate the session to order conversion rate to measure the effecticity 
 */
 SELECT
 	website_sessions.utm_content,
-    COUNT(DISTINCT website_sessions.website_session_id) AS sessions,
+	COUNT(DISTINCT website_sessions.website_session_id) AS sessions,
     COUNT(DISTINCT orders.order_id) AS orders,
 	COUNT(DISTINCT orders.order_id) /COUNT(DISTINCT website_sessions.website_session_id) AS session_to_order_conv_rt 
 FROM website_sessions
