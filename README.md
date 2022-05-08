@@ -7,4 +7,4 @@ Following use cases are included:
 
 - Traffic Sources: calculate conversion rate, finding top traffic source
 
-## **this reposatory is uncompleted and actively updated as of 08.05.22**
+## **this reposatory is in progress as of 08.05.22**
