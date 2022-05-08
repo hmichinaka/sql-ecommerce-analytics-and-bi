@@ -8,4 +8,4 @@ Following use cases are included:
 - Traffic Sources
 Calculate conversion rate, finding top traffic source
 
-** this reposatory is uncompleted and actively updated as of 08.05.22**
+**this reposatory is uncompleted and actively updated as of 08.05.22**
