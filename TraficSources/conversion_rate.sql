@@ -14,4 +14,3 @@ GROUP BY website_sessions.utm_content
 ORDER BY sessions DESC;
 
 
-
