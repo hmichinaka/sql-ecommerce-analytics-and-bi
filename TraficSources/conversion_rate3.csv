@@ -1,0 +1,3 @@
+device_type,sessions,orders,session_to_order_conv_rate
+desktop,3911,146,0.0373
+mobile,2492,24,0.0096
