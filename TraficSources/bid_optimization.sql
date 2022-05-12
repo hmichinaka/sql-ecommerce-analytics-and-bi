@@ -1,5 +1,6 @@
 /*
-Calculate the conversion rate of a campaign 'gsearch nonbrand' per device type
+Calculate the conversion rate of a campaign 'gsearch nonbrand' by device type
+in order to optimize bid on different sources
 */
 SELECT
 	website_sessions.device_type,
