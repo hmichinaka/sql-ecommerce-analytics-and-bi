@@ -5,6 +5,6 @@
 
 Following use cases are included:
 
-- Traffic Sources: calculate conversion rate, finding top traffic source
+- Traffic Sources: calculate conversion rate, finding top traffic source, calculate numbers of weekly sessions
 
-## **this reposatory is in progress as of 08.05.22**
+## **this reposatory is in progress as of 12.05.22**
