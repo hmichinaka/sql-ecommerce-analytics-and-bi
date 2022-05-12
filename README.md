@@ -5,6 +5,6 @@
 
 Following use cases are included:
 
-- Traffic Sources: calculate conversion rate, finding top traffic source, calculate numbers of weekly sessions
+- Traffic Sources: conversion rate, traffic source trending, bid optimization, segment trending
 
 ## **this reposatory is in progress as of 12.05.22**
