@@ -6,6 +6,6 @@
 Following use cases are included:
 
 - Traffic Sources: conversion rate, traffic source trending, bid optimization, segment trending
-- Website Performance: top page, top entry page, 
+- Website Performance: top page, top entry page, bounce rate on 50/50 test
 
-## **this reposatory is in progress as of 15.05.22**
+## **this reposatory is in progress as of 17.05.22**
