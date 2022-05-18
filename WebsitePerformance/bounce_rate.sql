@@ -31,7 +31,7 @@ FROM sessions_w_home_entry AS h
 	LEFT JOIN website_pageviews AS p
 		ON h.website_session_id = p.website_session_id
 GROUP BY 
-	h.website_session_id,
+    h.website_session_id,
     h.entry_page
 HAVING
 	COUNT(p.website_pageview_id) = 1
