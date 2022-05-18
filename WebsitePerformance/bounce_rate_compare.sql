@@ -16,7 +16,7 @@ WHERE pageview_url = '/lander-1'
 -- Step 1: finding the first website_pageview_id for relevant sessions
 CREATE TEMPORARY TABLE entry_test_pageviews
 SELECT
-	p.website_session_id,
+    p.website_session_id,
     MIN(p.website_pageview_id) AS entry_pv_id
 FROM website_pageviews AS p
 	INNER JOIN website_sessions AS s
@@ -41,7 +41,7 @@ WHERE p.pageview_url IN ('/home', '/lander-1')
 -- Step 3: counting pageviews for each session, to identify "bounce"
 CREATE TEMPORARY TABLE test_bounced_sessions
 SELECT
-	ts.website_session_id,
+    ts.website_session_id,
     ts.entry_page,
     COUNT(DISTINCT p.website_pageview_id) AS count_of_pv
 FROM test_sessions_w_entry_page AS ts
