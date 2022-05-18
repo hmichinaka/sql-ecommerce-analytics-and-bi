@@ -5,7 +5,7 @@ Calculate bounce rate of the homepage. Request arrived on 14.06.2012.
 -- Step 1: finding the first website_pageview_id for relevant sessions
 CREATE TEMPORARY TABLE entry_pageviews
 SELECT
-	website_session_id,
+    website_session_id,
     MIN(website_pageview_id) AS entry_pv_id
 FROM website_pageviews
 WHERE created_at < '2012-06-14'
