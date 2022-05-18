@@ -14,7 +14,7 @@ GROUP BY website_session_id;
 -- Step 2: identifying the landing page of each session
 CREATE TEMPORARY TABLE sessions_w_home_entry
 SELECT
-	e.website_session_id,
+    e.website_session_id,
     p.pageview_url AS entry_page
 FROM entry_pageviews AS e
 	LEFT JOIN website_pageviews AS p
@@ -24,7 +24,7 @@ WHERE p.pageview_url = '/home';
 -- Step 3: counting pageviews for each session, to identify "bounce"
 CREATE TEMPORARY TABLE bounced_sessions
 SELECT
-	h.website_session_id,
+    h.website_session_id,
     h.entry_page,
     COUNT(DISTINCT p.website_pageview_id) AS count_of_pv
 FROM sessions_w_home_entry AS h
@@ -39,7 +39,7 @@ HAVING
 
 -- Step 4: summarizing by counting total sessions and bounced sessions
 SELECT
-	COUNT(DISTINCT h.website_session_id) AS sessions,
+    COUNT(DISTINCT h.website_session_id) AS sessions,
     COUNT(DISTINCT b.website_session_id) AS bounced_sessions,
     COUNT(DISTINCT b.website_session_id) / COUNT(DISTINCT h.website_session_id) AS bounce_rate
 FROM sessions_w_home_entry AS h
