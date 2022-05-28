@@ -1,0 +1,3 @@
+segment,lander_click_rt,products_click_rt,mrfuzzy_click_rt,cart_click_rt,shipping_click_rt,billing_click_rt
+from_custom_lander,0.4676,0.7128,0.4508,0.6638,0.8528,0.4772
+from_homepage,0.4166,0.7261,0.4327,0.6757,0.8400,0.4286

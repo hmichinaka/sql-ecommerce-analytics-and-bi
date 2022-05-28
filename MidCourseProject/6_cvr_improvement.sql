@@ -3,6 +3,8 @@
 from the test (Jun 19 – Jul 28), and use nonbrand sessions and revenue since then to calculate incremental value)
 */
 DROP TEMPORARY TABLE IF EXISTS first_test_pageviews;
+DROP TEMPORARY TABLE IF EXISTS nonbrand_test_sessions_w_entry_pages;
+DROP TEMPORARY TABLE IF EXISTS nonbrand_test_sessions_w_orders;
 
 -- Finding the first pageview_id for /lander-1
 SELECT MIN(website_pageview_id) AS first_test_pv
@@ -58,14 +60,31 @@ FROM nonbrand_test_sessions_w_orders
 GROUP BY entry_page
 ;
 
+-- cvr for /home : 0.0318
+-- cvr for /lander-1 : 0.0406
+-- /lander-1 has 0.0087 more cvr
+
+-- Finding the most recent pageview for gsearch nonbrand where the traffic was sent to /home
 SELECT
-	YEAR(s.created_at) AS year,
-    MONTH(s.created_at) AS month,
-    SUM(o.price_usd) AS total_order_usd
+	MAX(s.website_session_id) AS most_recent_gsearch_nonbrand_home_pageview
 FROM website_sessions AS s
-	LEFT JOIN orders AS o
-		ON s.website_session_id = o.website_session_id
-GROUP BY
-	YEAR(s.created_at),
-    MONTH(s.created_at)
+	LEFT JOIN website_pageviews AS p
+		ON s.website_session_id = p.website_session_id
+WHERE utm_source = 'gsearch'
+    AND utm_campaign = 'nonbrand'
+    AND pageview_url = '/home'
+    AND s.created_at < '2012-11-27'
 ;
+-- max website_session_id = 17145
+
+SELECT
+	COUNT(website_session_id) AS sessions_since_test
+FROM website_sessions
+WHERE created_at < '2012-11-27'
+	AND website_session_id > '17145' -- last /home session
+	AND utm_source = 'gsearch'
+    AND utm_campaign = 'nonbrand'
+;
+-- 22,972 website sessions since the test 
+-- x 0.0087 incremental conversion 
+-- = 202 incremental ordres since 2012-07-29 (ca. 4 months)
