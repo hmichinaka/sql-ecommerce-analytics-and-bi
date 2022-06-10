@@ -7,6 +7,8 @@ Following use cases are included:
 
 - Traffic Sources: conversion rate, traffic source trending, bid optimization, segment trending
 - Website Performance: top page, top entry page, bounce rate on 50/50 test, conversion funnel, click-through rate
-- Mid-course Project: Quantify the company's growth and prenset it to CEO
+- Mid-course Project: quantify the company's growth and prenset it to CEO
+- Business Patterns: seasonality, business pattern
 
-## **this reposatory is in progress as of 28.05.22**
+
+## **this reposatory is in progress as of 10.06.22**
