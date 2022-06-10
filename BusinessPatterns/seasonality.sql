@@ -19,6 +19,7 @@ GROUP BY
 -- Weekly volume
 SELECT
 	MIN(DATE(s.created_at)) AS week_start_date,
+    WEEK(s.created_at) AS wk,
 	COUNT(DISTINCT s.website_session_id) AS sessions,
     COUNT(DISTINCT o.order_id) AS orders
 FROM website_sessions AS s
