@@ -9,7 +9,10 @@ CREATE TEMPORARY TABLE products_pageviews
 SELECT
 	website_session_id,
     website_pageview_id,
-	CASE WHEN created_at < '2013-01-06' THEN 'A. Post_Product_1' ELSE 'B. Post_Procust_2' END AS time_period
+	CASE
+		WHEN created_at < '2013-01-06' THEN 'A. Post_Product_1' 
+        ELSE 'B. Post_Procust_2' 
+	END AS time_period
 FROM website_pageviews
 WHERE created_at BETWEEN '2012-10-06' AND '2013-04-06' -- 3 months before/after the launch of product #2
 	AND pageview_url = '/products'
