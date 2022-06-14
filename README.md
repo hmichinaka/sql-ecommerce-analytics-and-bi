@@ -12,4 +12,4 @@ Following use cases are included:
 - Product Analysis: revenue/margin trend, click-through rate in products
 
 
-## **this reposatory is in progress as of 12.06.22**
+## **this reposatory is in progress as of 14.06.22**
