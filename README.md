@@ -11,4 +11,4 @@ Following use cases are included:
 - Business Patterns: seasonality, business pattern
 - Product Analysis: revenue/margin trend, click-through rate in products, cross-sell, product refund
 
-## **this reposatory is in progress as of 28.06.22**
+## **this reposatory is in progress as of 02.07.22**
