@@ -9,6 +9,6 @@ Following use cases are included:
 - Website Performance: top page, top entry page, bounce rate on 50/50 test, conversion funnel, click-through rate
 - Mid-course Project: quantify the company's growth and prenset it to CEO
 - Business Patterns: seasonality, business pattern
-- Product Analysis: revenue/margin trend, click-through rate in products, cross-sell, product refund
+- Product Analysis: revenue/margin trend, click-through rate in products, cross-sell, refund rate
 
 ## **this reposatory is in progress as of 02.07.22**
