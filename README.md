@@ -10,5 +10,6 @@ Following use cases are included:
 - Mid-course Project: quantify the company's growth and prenset it to CEO
 - Business Patterns: seasonality, business pattern
 - Product Analysis: revenue/margin trend, click-through rate in products, cross-sell, refund rate
+- User Analysis (new vs repeat): visitor behavior, channel patterns, conversion rate
 
-## **this reposatory is in progress as of 03.07.22**
+## **this reposatory is in progress as of 06.07.22**
