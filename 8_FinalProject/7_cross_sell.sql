@@ -22,9 +22,9 @@ SELECT
 	COUNT(DISTINCT CASE WHEN product_id = 3 AND is_primary_item = 0 THEN order_id ELSE NULL END) AS _xsold_p3,
 	COUNT(DISTINCT CASE WHEN product_id = 4 AND is_primary_item = 0 THEN order_id ELSE NULL END) AS _xsold_p4,
     COUNT(DISTINCT CASE WHEN product_id = 1 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p1_xsell_rt,
-    COUNT(DISTINCT CASE WHEN product_id = 1 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p2_xsell_rt,
-    COUNT(DISTINCT CASE WHEN product_id = 1 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p3_xsell_rt,
-    COUNT(DISTINCT CASE WHEN product_id = 1 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p4_xsell_rt
+    COUNT(DISTINCT CASE WHEN product_id = 2 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p2_xsell_rt,
+    COUNT(DISTINCT CASE WHEN product_id = 3 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p3_xsell_rt,
+    COUNT(DISTINCT CASE WHEN product_id = 4 AND is_primary_item = 0 THEN order_id ELSE NULL END) / COUNT(DISTINCT order_id) AS p4_xsell_rt
 FROM primary_product
 GROUP BY 1
 ;
