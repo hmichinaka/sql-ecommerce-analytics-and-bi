@@ -12,4 +12,5 @@ FROM website_sessions AS s
 	LEFT JOIN orders AS o
 		ON s.website_session_id = o.website_session_id
 GROUP BY 1, 2
+ORDER BY 1, 2
 ;

@@ -20,4 +20,4 @@ FROM website_sessions AS s
 		ON s.website_session_id = o.website_session_id
 GROUP BY 1, 2
 ;
--- I found a jump of cvr in Q1-2013 then gradually increasing till today
+-- I found a jump of cvr in 2013-Q1 then gradually increasing till today
