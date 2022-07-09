@@ -1,5 +1,6 @@
 # Advanced SQL for Analytics and Business Intelligence
 
+## Content
 - Advanced MySQL quries to explore and analyze databases with MySQL Workbench
 - Simulated real-world eCommerce use cases
 
@@ -8,12 +9,12 @@ Following use cases are included:
 - Traffic Sources: conversion rate, traffic source trending, bid optimization, segment trending
 - Website Performance: top page, top entry page, bounce rate on 50/50 test, conversion funnel, click-through rate
 - Mid-term Project: quantify the company's growth and prenset it to CEO
-- Channel Portofolio: 
+- Channel Portofolio: channel trend, cross-channel bid optimization 
 - Business Patterns: seasonality, business pattern
 - Product Analysis: revenue/margin trend, click-through rate in products, cross-sell, refund rate
 - User Analysis (new vs repeat): visitor behavior, channel patterns, conversion rate
 
-In the end, I did a role-playing data analysis as the Final Project to conclude this repository.
+In the end, a series of case-study analyses was done as the Final Project to utilize what I learned from this repository.
 
 ## Final Project
 
@@ -33,5 +34,4 @@ CEO is clsoe to secure next round of funding. As an analyst, I help CEO to tell 
 
 - As product #2 is doing so well by targeting a holiday, it would make sense to introduce other seasonal products. At the same time, promotional marketing activities before holidays depending on the products is also recommended to maximise our revenue.
 - As a lower-priced product #4 is cross-sold well, I propose to increase our product lineups in a lower- and mid-priced range. However, we have to keep tracking some performance such as click-through rate and conversion rate to make sure that new products do not give a negative effect on our overall performance (so far we are doing good until product #4).
-- I want to make sure that we are effectively spending our marketing costs. The channel growth was confirmed but I can also compare nonbrand and brand channels to their marketing cost so that we do not overspend for them. 
-
+- I want to make sure that we are effectively spending our marketing costs. The channel growth was confirmed but I can also compare nonbrand and brand channels to their marketing cost so that we do not overspend for them in the long term. 
