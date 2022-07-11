@@ -1,6 +1,6 @@
 # Advanced SQL for Analytics and Business Intelligence
 
-- Advanced MySQL quries to explore and analyze databases with MySQL Workbench
+- MySQL queries to explore and analyze databases with MySQL Workbench
 - Simulated real-world eCommerce use cases
 
 Following use cases are included:
